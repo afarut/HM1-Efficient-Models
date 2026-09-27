@@ -4,11 +4,18 @@
 
 Kaggle: https://www.kaggle.com/code/doifgoox/itmo-cnn-cost-lab-hw1
 
+## Материалы для проверки
+
+- [Рукописное описание формул (PDF)](hw1_handwritten.pdf).
+- [Код функций FLOPs, Memory, Latency и Energy](equations.py).
+- [Графики сравнения с измерениями](results/figures/) — 8 PNG-файлов; основные графики также приведены в конце отчёта.
+- [Исходные измерения](results/measurements.csv) и [параметры моделей](results/theta.json).
+
 ## Запуск
 
 Открыть `kaggle_run.ipynb` в Kaggle, включить GPU T4 и Internet, выполнить Run All. Используется только GPU 0. Веса не обучаются; входы случайные. Результаты сохраняются в `/kaggle/working/hw1/results` и архив `/kaggle/working/cnn-cost-lab-results.zip`.
 
-Альтернатива на NVIDIA GPU:
+Альтернатива на NVIDIA GPU, из папки `hw1/`:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -25,14 +32,13 @@ python calibrate.py
 - `measure.py`: полная сетка 11×12, фиксированный seed=2026, OOM handling, latency/memory/energy.
 - `calibrate.py`: fit только на базовой сетке, метрики на отложенных точках, графики.
 - `kaggle_run.ipynb`: автономный notebook; дополнительно проверяет Conv/Linear FLOPs через PyTorch profiler.
-- `DERIVATIONS_RU.md`: подробные выводы для переписывания от руки.
-- `COPY_BY_HAND.md`: краткая версия для переписывания.
+- [hw1_handwritten.pdf](hw1_handwritten.pdf): рукописное описание формул.
+- [DERIVATIONS_RU.md](DERIVATIONS_RU.md): подробные печатные выводы формул.
+- [COPY_BY_HAND.md](COPY_BY_HAND.md): краткая печатная версия формул.
 - `results/measurements.csv`: измерения; секунды, байты, джоули.
 - `results/theta.json`: параметры моделей.
 - `results/SUMMARY_RU.md`: реальные результаты и обсуждение.
 - `results/figures`: сравнения предсказаний с измерениями.
-
-**Осталось со стороны автора:** переписать выводы, отсканировать их в `hw1_handwritten.pdf`, добавить PDF в эту папку. Печатный разбор не выдаётся за рукопись. Затем загрузить репозиторий на GitHub и отправить ссылку через форму курса.
 
 ## Основные формулы
 
@@ -52,7 +58,7 @@ ReLU/MaxPool comparisons исключены из арифметических FL
 
 Latency — median of 9 synchronized host wall-clock forwards after 3 warmups. Peak memory — max_memory_allocated после reset_peak_memory_stats при живых входе и весах, без предыдущего выхода. Energy — whole-GPU average per forward over a sustained series targeting ~1.2 s (observed 0.894–1.745 s); NVML cumulative counter preferred, power integration fallback. Idle power is not subtracted. Все дополнительные случайные S/B удерживаются от fit; они проверяют обобщение на новые размеры, а не только на повторные замеры.
 
-Коэффициенты latency и energy эффективные и зависят от GPU/ПО. Модель памяти не описывает закрытый workspace и фрагментацию; FLOPs не равны числу аппаратных инструкций. Данные профайлера FLOPs включают только Conv/Linear MACs, поэтому сравниваются с соответствующей частью аналитики. Конкретные ошибки, OOM и обсуждение после запуска находятся ниже.
+Коэффициенты latency и energy эффективные и зависят от GPU/ПО. Модель памяти не описывает закрытый workspace и фрагментацию; FLOPs не равны числу аппаратных инструкций. Данные профайлера FLOPs включают только Conv/Linear MACs, поэтому сравниваются с соответствующей частью аналитики. Фактические ошибки, результаты проверки OOM и обсуждение находятся ниже.
 
 ## Kaggle CLI
 
