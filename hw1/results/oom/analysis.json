@@ -1,0 +1,7 @@
+{
+  "predicted_first_oom_available_min": 870,
+  "predicted_first_oom_available_max": 870,
+  "false_negatives_available": 3,
+  "unique_batches": 14,
+  "boundary_batch_relative_gap": 0.010368663594470046
+}

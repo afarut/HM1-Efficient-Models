@@ -1,0 +1,12 @@
+{
+  "kernel": "doifgoox/itmo-cnn-cost-lab-oom",
+  "version": 1,
+  "accelerator": "NvidiaTeslaT4",
+  "measurement_source": "real Kaggle CUDA worker subprocesses",
+  "postprocessing": "analyze_oom.py run locally; raw CSV/JSON unchanged",
+  "source_sha256": {
+    "models.py": "f5c391154a759d479b876c4c384e3c0608a84c3a8d31d58b6f2fc42cd913e68e",
+    "equations.py": "215ec7d5a4d9febba694e84baaa4b2571ec28742c14848a25ca07b7f25337a54",
+    "oom_probe.py": "dbfc5ef987f5bf109d06d09f826bb37dbccb77919532aa8a3e5fbab0b1fe4df5"
+  }
+}

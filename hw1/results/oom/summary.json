@@ -1,0 +1,19 @@
+{
+  "S": 512,
+  "initial_bracket": [
+    512,
+    1024
+  ],
+  "largest_success_in_search": 867,
+  "smallest_oom_in_search": 868,
+  "boundary_repeats_stable": true,
+  "predicted_first_oom_total": 877,
+  "total_memory": 15636037632,
+  "gpu": "Tesla T4",
+  "trials": 18,
+  "real_oom_trials": 9,
+  "false_negatives_total": 5,
+  "false_positives_total": 0,
+  "protocol": "One fresh subprocess per trial, CUDA GPU 0, actual OOM only; eval/inference_mode FP32, 3 warmups then one measured forward. No artificial memory cap. No energy/median latency measured in this supplemental experiment.",
+  "caveat": "Binary search assumes local monotonic feasibility. The adjacent boundary is repeated; cuDNN algorithm changes can make global feasibility nonmonotonic. Results apply to this session and software."
+}

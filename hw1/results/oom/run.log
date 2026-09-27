@@ -1,0 +1,26 @@
+[{"stream_name":"stdout","time":9.836839625,"data":"{\"S\": 512, \"B\": 256, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 6169042944, \"memory_prediction\": 4567564048.0}\n"}
+,{"stream_name":"stdout","time":18.659854565,"data":"{\"S\": 512, \"B\": 512, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 12324012032, \"memory_prediction\": 9130966800.0}\n"}
+,{"stream_name":"stdout","time":22.737238203,"data":"{\"S\": 512, \"B\": 1024, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 18257772304.0}\n"}
+,{"stream_name":"stdout","time":32.16901012,"data":"{\"S\": 512, \"B\": 768, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 13703938048, \"memory_prediction\": 13694369552.0}\n"}
+,{"stream_name":"stdout","time":36.03523952,"data":"{\"S\": 512, \"B\": 896, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15976070928.0}\n"}
+,{"stream_name":"stdout","time":46.166045658,"data":"{\"S\": 512, \"B\": 832, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 14844788736, \"memory_prediction\": 14835220240.0}\n"}
+,{"stream_name":"stdout","time":56.678531598,"data":"{\"S\": 512, \"B\": 864, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 15415214080, \"memory_prediction\": 15405645584.0}\n"}
+,{"stream_name":"stdout","time":60.474853116,"data":"{\"S\": 512, \"B\": 880, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15690858256.0}\n"}
+,{"stream_name":"stdout","time":64.352407695,"data":"{\"S\": 512, \"B\": 872, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15548251920.0}\n"}
+,{"stream_name":"stdout","time":70.41189152,"data":"{\"S\": 512, \"B\": 868, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15476948752.0}\n"}
+,{"stream_name":"stdout","time":81.169322244,"data":"{\"S\": 512, \"B\": 866, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 15450865664, \"memory_prediction\": 15441297168.0}\n"}
+,{"stream_name":"stdout","time":91.969098255,"data":"{\"S\": 512, \"B\": 867, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 15469740032, \"memory_prediction\": 15459122960.0}\n"}
+,{"stream_name":"stdout","time":102.967413398,"data":"{\"S\": 512, \"B\": 867, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 15469740032, \"memory_prediction\": 15459122960.0}\n"}
+,{"stream_name":"stdout","time":109.097900724,"data":"{\"S\": 512, \"B\": 868, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15476948752.0}\n"}
+,{"stream_name":"stdout","time":119.966059421,"data":"{\"S\": 512, \"B\": 867, \"status\": \"OK\", \"phase\": \"forward\", \"memory\": 15469740032, \"memory_prediction\": 15459122960.0}\n"}
+,{"stream_name":"stdout","time":126.043873906,"data":"{\"S\": 512, \"B\": 868, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15476948752.0}\n"}
+,{"stream_name":"stdout","time":129.887256925,"data":"{\"S\": 512, \"B\": 876, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15619555088.0}\n"}
+,{"stream_name":"stdout","time":133.659289919,"data":"{\"S\": 512, \"B\": 877, \"status\": \"OOM\", \"phase\": \"warmup\", \"memory\": null, \"memory_prediction\": 15637380880.0}\n"}
+,{"stream_name":"stdout","time":134.20806952,"data":"OOM EXPERIMENT COMPLETE {\"S\": 512, \"initial_bracket\": [512, 1024], \"largest_success_in_search\": 867, \"smallest_oom_in_search\": 868, \"boundary_repeats_stable\": true, \"predicted_first_oom_total\": 877, \"total_memory\": 15636037632, \"gpu\": \"Tesla T4\", \"trials\": 18, \"real_oom_trials\": 9, \"false_negatives_total\": 5, \"false_positives_total\": 0, \"protocol\": \"One fresh subprocess per trial, CUDA GPU 0, actual OOM only; eval/inference_mode FP32, 3 warmups then one measured forward. No artificial memory cap. No energy/median latency measured in this supplemental experiment.\", \"caveat\": \"Binary search assumes local monotonic feasibility. The adjacent boundary is repeated; cuDNN algorithm changes can make global feasibility nonmonotonic. Results apply to this session and software.\"}\n"}
+,{"stream_name":"stderr","time":136.330641926,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":136.330723113,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":136.599035264,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":136.599076036,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":137.229213038,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":138.4143557,"data":"[NbConvertApp] Writing 300607 bytes to __results__.html\n"}
+]
