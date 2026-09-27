@@ -1,0 +1,18 @@
+{
+  "latency": {
+    "launch_seconds": 2.281809309477208e-05,
+    "flops_per_second": 6927725623759.432,
+    "bytes_per_second": 90023119417.95622
+  },
+  "energy": {
+    "joules_per_flop": 4.89861399747202e-12,
+    "joules_per_byte": 0.0,
+    "baseline_watts": 53.63217102068637,
+    "latency": {
+      "launch_seconds": 2.281809309477208e-05,
+      "flops_per_second": 6927725623759.432,
+      "bytes_per_second": 90023119417.95622
+    }
+  },
+  "training_rule": "base S x base B only; all random S or B held out"
+}

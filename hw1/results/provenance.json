@@ -1,0 +1,7 @@
+{
+  "kaggle_kernel": "doifgoox/itmo-cnn-cost-lab-hw1",
+  "version": 1,
+  "measurement_source": "Kaggle Tesla T4; raw measurements.csv unchanged",
+  "postprocessing": "calibration and plotting repeated locally; only plot presentation and protocol wording corrected",
+  "energy_window_note": "1.2 s was a target, not a guaranteed lower bound; actual durations 0.894\u20131.745 s"
+}

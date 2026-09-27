@@ -1,0 +1,13 @@
+{
+  "id": "doifgoox/itmo-cnn-cost-lab-hw1",
+  "title": "ITMO CNN Cost Lab HW1",
+  "code_file": "kaggle_run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

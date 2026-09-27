@@ -1,0 +1,50 @@
+{
+  "latency": {
+    "train": {
+      "n": 63,
+      "median_absolute_relative_error": 0.3053793343692779,
+      "mean_absolute_relative_error": 0.2599145008299155,
+      "p90_absolute_relative_error": 0.48980648764693785
+    },
+    "validation": {
+      "n": 69,
+      "median_absolute_relative_error": 0.3341012682411778,
+      "mean_absolute_relative_error": 0.2950682366921774,
+      "p90_absolute_relative_error": 0.45293111060628444
+    }
+  },
+  "memory": {
+    "train": {
+      "n": 63,
+      "median_absolute_relative_error": 0.3433765547691039,
+      "mean_absolute_relative_error": 0.41631834618780694,
+      "p90_absolute_relative_error": 0.7740425657794039
+    },
+    "validation": {
+      "n": 69,
+      "median_absolute_relative_error": 0.34950008883153805,
+      "mean_absolute_relative_error": 0.40888867391509576,
+      "p90_absolute_relative_error": 0.669467467163932
+    }
+  },
+  "energy": {
+    "train": {
+      "n": 63,
+      "median_absolute_relative_error": 0.12011581282401251,
+      "mean_absolute_relative_error": 0.1582479493268582,
+      "p90_absolute_relative_error": 0.30725033971277205
+    },
+    "validation": {
+      "n": 69,
+      "median_absolute_relative_error": 0.3028999110030067,
+      "mean_absolute_relative_error": 0.24956599809375155,
+      "p90_absolute_relative_error": 0.4173190885226871
+    }
+  },
+  "oom": {
+    "observed": 0,
+    "predicted_by_tensor_model": 0,
+    "false_negatives": 0,
+    "false_positives": 0
+  }
+}
